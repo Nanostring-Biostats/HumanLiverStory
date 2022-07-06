@@ -1,0 +1,667 @@
+{
+    "Images": [
+        {
+            "Name": "i0",
+            "Description": "",
+            "Path": "images/hu-normal-liver-001",
+            "Width": 49152,
+            "Height": 81920,
+            "MaxLevel": 7
+        }
+    ],
+    "Header": "![image](img/SOA_logo.png)",
+    "Rotation": 0,
+    "Layout": {
+        "Grid": [
+            [
+                "i0"
+            ]
+        ]
+    },
+    "Stories": [
+        {
+            "Name": "A liver story created by Nanostring and Fynnbio",
+            "Description": "Welcome to the [**Spatial Organ Atlas (SOA)**](https://www.nanostring.com/spatial-organ-atlas) Human Liver Demonstration.\n\nThe SOA is a database for whole transcriptome spatial profiles of functional components of tissues from human and mouse generated with the GeoMx® Digital Spatial Profiler. All the data in the SOA is downloadable, including [**this human liver sample (#001)**](https://nanostring.com/products/geomx-digital-spatial-profiler/spatial-organ-atlas/human-brain/).\n\nUsing [**Minerva**](https://github.com/labsyspharm/minerva-story/wiki), we will show you how the imaging and molecular data combine to give you a comprehensive profile of the tissue architecture and biology.\n\nClick around to explore on your own. \n\nHints:\n* Zoom and pan the image via the mouse/trackpad. Dependent on browser and operating system, keyboard shortcuts are available: + zoom in, - zoom out, pan via arrow keys (tested on Chrome).\n* Open and close the left- and right-hand menus by clicking on < or >.\n* See results in the left-hand menu and click on the selectable regions to zoom to the featured area of the tissue.\n* Turn channels on and off with the right-hand menu.",
+            "Waypoints": [
+                {
+                    "Name": "Gross Liver Anatomy",
+                    "Description": "[Description for liver organ structure]\n\n[need anatomy cartoon]",
+                    "Arrows": [],
+                    "Overlays": [],
+                    "Group": "All Markers",
+                    "Masks": [
+                        "Zone 1",
+                        "Zone 2",
+                        "Zone 3",
+                        "Central Vein",
+                        "Bile Duct",
+                        "Artery",
+                        "Portal Vein",
+                        "CV Macrophage",
+                        "CV Sinusoid",
+                        "Liver Macrophage",
+                        "Liver Sinusoid",
+                        "PV Macrophage",
+                        "PV Sinusoid",
+                        "All Cells"
+                    ],
+                    "ActiveMasks": [
+                        "Zone 1",
+                        "Zone 2",
+                        "Zone 3",
+                        "Central Vein",
+                        "Bile Duct",
+                        "Artery",
+                        "Portal Vein",
+                        "CV Macrophage",
+                        "CV Sinusoid",
+                        "Liver Macrophage",
+                        "Liver Sinusoid",
+                        "PV Macrophage",
+                        "PV Sinusoid",
+                        "All Cells"
+                    ],
+                    "Zoom": 0.8,
+                    "Pan": [
+                        0.5,
+                        0.5
+                    ]
+                },
+                {
+                    "Name": "Linking Molecular and Imaging Data", 
+                    "Description": "One of the key aspects of spatial biology is the ability to link molecular data to spatial (image) information. In this plot, the number of genes detected per ROI by each brain structure is shown. Select a data point within the plot to see its corresponding ROI in the SOA image.\n\nMost regions in the brain show a high number of expressed genes. As expected, the segmented profiling revealed that considerably more genes were expressed in the cell body regions (NeuN+) than in the neuropil (NeuN-) regions. While the bulk of neuronal transcripts are captured in the NeuN+ somata, it is important to realize that neuropil data represents a combination of transcripts from enmeshed glia and the locally translated mRNAs of neuronal axons and dendrites.", 
+                    "Footer": "Hints:\n* Select a single data point in the graph to spot the corresponding ROI in the SOA image.",
+                    "Arrows": [], 
+                    "Overlays": [], 
+                    "Group": "All Markers", 
+                    "Masks": [
+                        "Zone 1",
+                        "Zone 2",
+                        "Zone 3",
+                        "Central Vein",
+                        "Bile Duct",
+                        "Artery",
+                        "Portal Vein",
+                        "CV Macrophage",
+                        "CV Sinusoid",
+                        "Liver Macrophage",
+                        "Liver Sinusoid",
+                        "PV Macrophage",
+                        "PV Sinusoid",
+                        "All Cells"
+                    ],
+                    "ActiveMasks": [
+                        "Zone 1",
+                        "Zone 2",
+                        "Zone 3",
+                        "Central Vein",
+                        "Bile Duct",
+                        "Artery",
+                        "Portal Vein",
+                        "CV Macrophage",
+                        "CV Sinusoid",
+                        "Liver Macrophage",
+                        "Liver Sinusoid",
+                        "PV Macrophage",
+                        "PV Sinusoid",
+                        "All Cells"
+                    ],
+                    "Zoom": 0.415575667912783, 
+                    "Pan": [0.5, 0.5],
+                    "MaskAndPan": {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "background": null}, "width": "container",
+                    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+                    "data": {
+                        "url": "data/waypoints.csv"
+                    },
+                    "mark": {
+                        "type": "point",
+                        "filled": true,
+                        "stroke": "white",
+                        "strokeWidth": 0.5,
+                        "size": 80
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "x_axis",
+                            "type": "quantitative",
+                            "axis": {
+                                "labelExpr": "datum.label == 1 ? 'Artery' : datum.label == 2 ? 'Bile Duct' : datum.label == 3 ? 'Central Vein' : datum.label == 4 ? 'CV Macrophage' : datum.label == 5 ? 'CV Sinusoid' : datum.label == 6 ? 'Liver Macrophage' : datum.label == 7 ? 'Liver Sinusoid' : datum.label == 8 ? 'Portal Vein' : datum.label == 9 ? 'PV Macrophage' : datum.label == 10 ? 'PV Sinusoid' : datum.label == 11 ? 'Zone 1' : datum.label == 12 ? 'Zone 2' : datum.label == 13 ? 'Zone 3' : null",
+                                "labelAngle": -90,
+                                "tickCount": 13,
+                                "grid": false
+                            },
+                            "scale": {"domain": [0, 14]},
+                            "title": null
+                        },
+                        "y": {
+                            "field": "GenesDetected",
+                            "type": "quantitative",
+                            "title": "Genes Detected, # > LOQ"
+                        },
+                        "color": {
+                            "field": "PrimaryLocation",
+                            "type": "nominal",
+                            "legend": {
+                                "orient": "bottom",
+                                "direction": "vertical"
+                            },
+                            "title": "ROI Category",
+                            "scale": {
+                                "domain": [
+                                    "Zone 1",
+                                    "Zone 2",
+                                    "Zone 3",
+                                    "Central Vein",
+                                    "Bile Duct",
+                                    "Artery",
+                                    "Portal Vein",
+                                    "CV Macrophage",
+                                    "CV Sinusoid",
+                                    "Liver Macrophage",
+                                    "Liver Sinusoid",
+                                    "PV Macrophage",
+                                    "PV Sinusoid"
+                                ],
+                                "range": [
+                                    "#f0e442", "#d55e00", "#5c581d", "#a34902", "#ccf2f7", "#90cef0", "#37a7e5", "#005b8e", "#002e48", "#737373", "#cbcbcb", "#b9f9e8", "#00ffba"
+                                ]
+                            }
+                        },
+                    "tooltip": [
+                        {"field": "GenesDetected", "type": "quantitative"},
+                        {"field": "PrimaryLocation", "type": "nominal", "title": "ROI category"}
+                    ]
+                    }
+                }
+                },
+                {"Name": "Differential Gene Expression in Liver Zones", 
+                    "Description": "In this analysis, we compare gene expression between the different zones of the hepatic lobules. We can see a number of genes that are differentially expressed. \n[interpretation and citations]", 
+                    "Footer": "Hints:\n* Select the regions on the graph with the genes that are differentially expressed to see all the ROIs where those genes are more highly expressed.\n* Turning on only a single channel may help you see smaller ROIs.",
+                    "Arrows": [], 
+                    "Overlays": [], 
+                    "Group": "All Markers", 
+                    "Masks": ["Zone 1", "Zone 2", "Zone 3"], 
+                    "ActiveMasks": ["Zone 1", "Zone 2", "Zone 3"], 
+                    "Zoom": 1, 
+                    "Pan": [0.5, 0.5],
+                    "VisBarChart": {"config": {"view": {"continuousWidth": 400, "continuousHeight": 400}, "background": null},
+                    "width": "container", "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+                    "data":{
+                        "url": "data/volcanoplot_Zone13.csv"
+                    },
+                    "layer": [{
+                        "mark": {"type": "point", "filled": true},
+                        "encoding": {
+                            "x": {
+                                "field": "FC",
+                                "type": "quantitative",
+                                "title": "Zone 1 ← log2(FC) → Zone 3",
+                                "axis": {
+                                    "titleFontSize": 9
+                                }
+                            },
+                            "y": {
+                                "field": "Significance",
+                                "type": "quantitative",
+                                "title": "Significance, -log10(P)"
+                            },
+                            "color": {
+                                "field": "Color",
+                                "type": "nominal",
+                                "scale": null
+                            }
+                        }
+                    },
+                    {
+                        "mark": {"type": "rect", "fillOpacity": 0, "stroke": "red"},
+                        "data": {"values": [{"type": "Zone 1"}]},
+                        "encoding": {
+                            "y": {"datum": 1.3},
+                            "y2": {"datum": 5},
+                            "x": {"datum": -2.5},
+                            "x2": {"datum": -0.585}
+                        }
+                    },
+                    {
+                        "mark": {"type": "rect", "fillOpacity": 0, "stroke": "red"},
+                        "data": {"values": [{"type": "Zone 3"}]},
+                        "encoding": {
+                            "y": {"datum": 1.3},
+                            "y2": {"datum": 5},
+                            "x": {"datum": 0.585},
+                            "x2": {"datum": 2.5}
+                        }
+                    },
+                    {
+                        "mark": {
+                            "type": "text",
+                            "align": "right",
+                            "fontSize": 10,
+                            "color": "white",
+                            "stroke": "black",
+                            "strokeWidth": 0.1,
+                            "baseline": "bottom",
+                            "angle": 0
+                        },
+                        "encoding": {
+                            "x": {
+                                "field": "FC",
+                                "type": "quantitative"
+                            },
+                            "y": {
+                                "field": "Significance",
+                                "type": "quantitative"
+                            },
+                            "text": {
+                                "field": "GeneName"
+                            }
+                        }
+                    },
+                    {
+                        "mark": {
+                            "type": "text",
+                            "align": "left",
+                            "fontSize": 10,
+                            "color": "white",
+                            "stroke": "black",
+                            "strokeWidth": 0.2,
+                            "baseline": "bottom",
+                            "angle": 0
+                        },
+                        "encoding": {
+                            "x": {
+                                "field": "FC",
+                                "type": "quantitative"
+                            },
+                            "y": {
+                                "field": "Significance",
+                                "type": "quantitative"
+                            },
+                            "text": {
+                                "field": "GeneName2"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {"Name": "Validating Gene Expression with Protein Expression 1", 
+            "Description": "We explored the relationship between our data and the [**Human Protein Atlas**](https://www.proteinatlas.org/) to investigate whether the gene expression patterns we observed would correspond to existing protein data. Here we see expression of the *CYP1A2* gene alongside the IHC for the corresponding protein. The protein is expressed in Zone 3, which correlates well to the observed gene expression in Zone 3 ROIs. The other two examples are *CYP2E1* and *CYP3A4*.\n\nCytochrome P450 (CYPs) are a family of monooxygenases involved in the metabolism of various endogenous substrates, including fatty acids, steroid hormones and vitamins.\n\n![image](img/CYP1A2.png)\n\n[*Image credit: Human Protein Atlas.*](https://www.proteinatlas.org/ENSG00000140505-CYP1A2/tissue/liver#img)", 
+            "Footer": "Hints:\n* Select a single data point to be taken to that ROI.\n* If you hover your mouse over the boxplot, a summary of the distribution metrics for that ROI type will be displayed.",
+            "Arrows": [], 
+            "Overlays": [], 
+            "Group": "All Markers", 
+            "Masks": ["Zone 1", "Zone 2", "Zone 3"], 
+            "ActiveMasks": ["Zone 1", "Zone 2", "Zone 3"], 
+            "Zoom": 1, 
+            "Pan": [0.5, 0.5],
+            "chanAndMaskandPan": {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "background": null, "numberFormat": ".0f"}, "width": "container", "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+                "data": {"url": "data/CYP.csv",
+                    "format": {
+                        "parse": {
+                            "X_position": "number",
+                            "Y_position": "number",
+                            "type":"string",
+                            "SegmentType": "string",
+                            "CYP1A2":"number",
+                            "x_axis":"number",
+                            "LongName": "string"
+                        }
+                    }
+                }, 
+                "layer": [{
+                    "mark": {
+                        "type": "boxplot", 
+                        "ticks": {
+                            "color": "white"
+                            },
+                        "color": "white",
+                        "size": 30
+                        }, 
+                    "encoding": {
+                        "color": {
+                            "field": "Sub_location",
+                            "legend": {
+                                "orient": "bottom",
+                                "direction":"vertical"
+                            },
+                            "scale": {
+                                "domain": ["Zone 1", "Zone 2", "Zone 3"],
+                                "range": ["#F0E442", "#CC79A7", "#DECAC2"]
+                                }
+                            }, 
+                        "x": {
+                            "type": "nominal", 
+                            "field": "Sub_location", 
+                            "title": null,
+                            "sort": ["Zone 1", "Zone 2", "Zone 3"]
+                            },
+                        "y": {
+                            "type": "quantitative", 
+                            "field": "CYP1A2", 
+                            "title": "CYP1A2 Normalized Expression"
+                        }
+                        }
+                    },
+                    {
+                    "mark": {
+                        "type": "point", 
+                        "color": "white", 
+                        "fill": "white", 
+                        "stroke": "red",
+                            "strokeWidth": 1, 
+                            "size": 60
+                        },
+                    "encoding": {
+                        "x": {
+                            "field": "x_axis", 
+                            "title" :null, 
+                            "type": "quantitative", 
+                            "axis": {
+                                "labels":false, 
+                                "ticks":false
+                                }
+                            },
+                        "y": {
+                            "field": "CYP1A2", 
+                            "type": "quantitative"
+                            },
+                        "tooltip": [{"field": "CYP1A2", "type": "quantitative", "title": "CYP1A2 Normalized Expression","format": ".0f" },
+                        {"field": "Sub_location", "type": "nominal", "title": "ROI Category"}]
+                        }
+                    }
+                ]
+            }
+        },
+        {"Name": "Validating Gene Expression with Protein Expression 2", 
+            "Description": "We explored the relationship between our data and the [**Human Protein Atlas**](https://www.proteinatlas.org/) to investigate whether the gene expression patterns we observed would correspond to existing protein data. Here we see expression of the *ALDOB* gene alongside the IHC for the corresponding protein. The protein is expressed at a high level in Zone 1 compared to Zone 3.\n\n*ALDOB* is an enzyme involved in step 4 of the subpathway that synthesizes D-glyceraldehyde 3-phosphate and glycerone phosphate from D-glucose. This subpathway is part of the pathway glycolysis, which is itself part of Carbohydrate degradation.\n\n![image](img/ALDOB.png)\n\n[*Image credit: Human Protein Atlas.*](https://www.proteinatlas.org/ENSG00000136872-ALDOB/tissue/liver#img)", 
+            "Footer": "Hints:\n* Select a single data point to be taken to that ROI.\n* If you hover your mouse over the boxplot, a summary of the distribution metrics for that ROI type will be displayed.",
+            "Arrows": [], 
+            "Overlays": [], 
+            "Group": "All Markers", 
+            "Masks": ["Zone 1", "Zone 2", "Zone 3"], 
+            "ActiveMasks": ["Zone 1", "Zone 2", "Zone 3"], 
+            "Zoom": 1, 
+            "Pan": [0.5, 0.5],
+            "chanAndMaskandPan": {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "background": null, "numberFormat": ".0f"}, "width": "container", "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+                "data": {"url": "data/ALDOB.csv",
+                    "format": {
+                        "parse": {
+                            "X_position": "number",
+                            "Y_position": "number",
+                            "type":"string",
+                            "SegmentType": "string",
+                            "ALDOB":"number",
+                            "x_axis":"number",
+                            "LongName": "string"
+                        }
+                    }
+                }, 
+                "layer": [{
+                    "mark": {
+                        "type": "boxplot", 
+                        "ticks": {
+                            "color": "white"
+                            },
+                        "color": "white",
+                        "size": 30
+                        }, 
+                    "encoding": {
+                        "color": {
+                            "field": "Sub_location",
+                            "legend": {
+                                "orient": "bottom",
+                                "direction":"vertical"
+                            },
+                            "scale": {
+                                "domain": ["Zone 1", "Zone 2", "Zone 3"],
+                                "range": ["#F0E442", "#CC79A7", "#DECAC2"]
+                                }
+                            }, 
+                        "x": {
+                            "type": "nominal", 
+                            "field": "Sub_location", 
+                            "title": null,
+                            "sort": ["Zone 1", "Zone 2", "Zone 3"]
+                            },
+                        "y": {
+                            "type": "quantitative", 
+                            "field": "ALDOB", 
+                            "title": "ALDOB Normalized Expression"
+                        }
+                        }
+                    },
+                    {
+                    "mark": {
+                        "type": "point", 
+                        "color": "white", 
+                        "fill": "white", 
+                        "stroke": "red",
+                            "strokeWidth": 1, 
+                            "size": 60
+                        },
+                    "encoding": {
+                        "x": {
+                            "field": "x_axis", 
+                            "title" :null, 
+                            "type": "quantitative", 
+                            "axis": {
+                                "labels":false, 
+                                "ticks":false
+                                }
+                            },
+                        "y": {
+                            "field": "ALDOB", 
+                            "type": "quantitative"
+                            },
+                        "tooltip": [{"field": "ALDOB", "type": "quantitative", "title": "ALDOB Normalized Expression","format": ".0f" },
+                        {"field": "Sub_location", "type": "nominal", "title": "ROI Category"}]
+                        }
+                    }
+                ]
+            }
+        }
+            ]
+        }
+    ],
+    "Masks": [
+        {
+            "Path": "All-Cells",
+            "Name": "All Cells",
+            "Colors": [
+                "ffffff"
+            ],
+            "Channels": [
+                "All Cells"
+            ]
+        },
+        {
+            "Path": "Zone-1",
+            "Name": "Zone 1",
+            "Colors": [
+                "308e36"
+            ],
+            "Channels": [
+                "Zone 1"
+            ]
+        },
+        {
+            "Path": "Zone-2",
+            "Name": "Zone 2",
+            "Colors": [
+                "140f36"
+            ],
+            "Channels": [
+                "Zone 2"
+            ]
+        },
+        {
+            "Path": "Zone-3",
+            "Name": "Zone 3",
+            "Colors": [
+                "913521"
+            ],
+            "Channels": [
+                "Zone 3"
+            ]
+        },
+        {
+            "Path": "Central-Vein",
+            "Name": "Central Vein",
+            "Colors": [
+                "093a15"
+            ],
+            "Channels": [
+                "Central Vein"
+            ]
+        },
+        {
+            "Path": "Bile-Duct",
+            "Name": "Bile Duct",
+            "Colors": [
+                "381095"
+            ],
+            "Channels": [
+                "Bile Duct"
+            ]
+        },
+        {
+            "Path": "Artery",
+            "Name": "Artery",
+            "Colors": [
+                "3d1803"
+            ],
+            "Channels": [
+                "Artery"
+            ]
+        },
+        {
+            "Path": "Portal-Vein",
+            "Name": "Portal Vein",
+            "Colors": [
+                "3c9863"
+            ],
+            "Channels": [
+                "Portal Vein"
+            ]
+        },
+        {
+            "Path": "CV-Macrophage",
+            "Name": "CV Macrophage",
+            "Colors": [
+                "2a1641"
+            ],
+            "Channels": [
+                "CV Macrophage"
+            ]
+        },
+        {
+            "Path": "CV-Sinusoid",
+            "Name": "CV Sinusoid",
+            "Colors": [
+                "9c682c"
+            ],
+            "Channels": [
+                "CV Sinusoid"
+            ]
+        },
+        {
+            "Path": "Liver-Macrophage",
+            "Name": "Liver Macrophage",
+            "Colors": [
+                "0f442f"
+            ],
+            "Channels": [
+                "Liver Macrophage"
+            ]
+        },
+        {
+            "Path": "Liver-Sinusoid",
+            "Name": "Liver Sinusoid",
+            "Colors": [
+                "721a9f"
+            ],
+            "Channels": [
+                "Liver Sinusoid"
+            ]
+        },
+        {
+            "Path": "PV-Macrophage",
+            "Name": "PV Macrophage",
+            "Colors": [
+                "483607"
+            ],
+            "Channels": [
+                "PV Macrophage"
+            ]
+        },
+        {
+            "Path": "PV-Sinusoid",
+            "Name": "PV Sinusoid",
+            "Colors": [
+                "08a381"
+            ],
+            "Channels": [
+                "PV Sinusoid"
+            ]
+        }
+    ],
+    "Groups": [
+        {
+            "Name": "All Markers",
+            "Path": "All-Markers_0__DNA--1__CK818--2__CD68--3__SMA",
+            "Colors": [
+                "0000ff",
+                "00ff00",
+                "ffff00",
+                "ff00ff"
+            ],
+            "Channels": [
+                "DNA",
+                "CK8/18",
+                "CD68",
+                "SMA"
+            ]
+        },
+        {
+            "Name": "CK8",
+            "Path": "CK8_1__CK818",
+            "Colors": [
+                "00ff00"
+            ],
+            "Channels": [
+                "CK8/18"
+            ]
+        },
+        {
+            "Name": "CD68",
+            "Path": "CD68_2__CD68",
+            "Colors": [
+                "ffff00"
+            ],
+            "Channels": [
+                "CD68"
+            ]
+        },
+        {
+            "Name": "SMA",
+            "Path": "SMA_3__SMA",
+            "Colors": [
+                "ff00ff"
+            ],
+            "Channels": [
+                "SMA"
+            ]
+        },
+        {
+            "Name": "Nuclei",
+            "Path": "Nuclei_0__DNA",
+            "Colors": [
+                "0000ff"
+            ],
+            "Channels": [
+                "DNA"
+            ]
+        }
+    ]
+}
