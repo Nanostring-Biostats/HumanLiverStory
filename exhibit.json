@@ -23,9 +23,8 @@
             "Name": "A liver story created by Nanostring and Fynnbio",
             "Description": "Welcome to the [**Spatial Organ Atlas (SOA)**](https://www.nanostring.com/spatial-organ-atlas) Human Liver Demonstration.\n\nThe SOA is a database for whole transcriptome spatial profiles of functional components of tissues from human and mouse generated with the GeoMx® Digital Spatial Profiler. All the data in the SOA is downloadable, including [**this human liver sample (#001)**](https://nanostring.com/products/geomx-digital-spatial-profiler/spatial-organ-atlas/human-brain/).\n\nUsing [**Minerva**](https://github.com/labsyspharm/minerva-story/wiki), we will show you how the imaging and molecular data combine to give you a comprehensive profile of the tissue architecture and biology.\n\nClick around to explore on your own. \n\nHints:\n* Zoom and pan the image via the mouse/trackpad. Dependent on browser and operating system, keyboard shortcuts are available: + zoom in, - zoom out, pan via arrow keys (tested on Chrome).\n* Open and close the left- and right-hand menus by clicking on < or >.\n* See results in the left-hand menu and click on the selectable regions to zoom to the featured area of the tissue.\n* Turn channels on and off with the right-hand menu.",
             "Waypoints": [
-                {
-                    "Name": "Gross Liver Anatomy",
-                    "Description": "[Description for liver organ structure]\n\n[need anatomy cartoon]",
+                {"Name": "Gross Liver Anatomy",
+                    "Description": "Liver is the largest internal organ in human body. It is involved in three major vital functions of the body including storage, cleansing and synthesis. A liver helps improve digestion, removes toxins and other impurities from the body, regulates blood clotting, removes bacteria from the blood and maintains the balance of hormones. The functional unit of the liver is the lobule. Each lobule is hexagonal and a portal triad (portal vein, hepatic artery, bile duct) sits at each corner of the hexagon. The foundation of the lobule is composed of hepatocytes, which have physiologically distinct apical and basolateral membranes. Based on function and perfusion, hepatocytes are divided into 3 zones. \n* Zone I is defined to be the periportal region of hepatocytes and are the best perfused and first to regenerate due to their proximity to oxygenated blood and nutrients. Due to its high perfusion, zone I plays a large role in oxidative metabolisms such as beta-oxidation, gluconeogenesis, bile formation, cholesterol formation, and amino acid catabolism. \n* Zone II is defined as the pericentral region of the hepatocytes and zone II sits between zones I and III. \n* Zone III has the lowest perfusion due to its distance from the portal triad. It plays the largest role in detoxification, biotransformation of drugs, ketogenesis, glycolysis, lipogenesis, glycogen synthesis, and glutamine formation.\n\nThis liver sample shown to the right represents a 5 µm FFPE tissue section from a 72-year-old man. The sample was visualized with CK8/18 (hepatocytes), CD 68 (Kupffer Cells/Macrophages), alpha-SMA (sinusoid and stellate cells and SYTO 83 (nuclei). In parallel, the sample was molecularly profiled with the GeoMx Human Whole Transcriptome Atlas (WTA) assay. You can click on the lobular zone 1, 2 And 3 in the cartoon to see them outlined on the tissue image, and you can toggle the Regions of Interest (ROIs) by selecting from the data layers below.",
                     "Arrows": [],
                     "Overlays": [],
                     "Group": "All Markers",
@@ -67,8 +66,50 @@
                         0.5
                     ]
                 },
-                {
-                    "Name": "Linking Molecular and Imaging Data", 
+                {"Name": "Detailed Liver Anatomy",
+                    "Description": "With GeoMx DSP, Regions of Interest (ROIs) are selected by the user and then molecularly profiled. These ROIs can be either profiled whole (i.e. geometric profiling) or subdivided based on the visible morphology markers into compartments and profiled separately (i.e. segmented and rare cell profiling). In the cartoon below, the key features of the liver lobular are highlighted and corresponding ROIs are mapped on the tissue image to the right.\n* Liver lobular Zone 1, 2 and 3: Geometric\n* Bile duct, hepatic artery and portal vein in Portal triad: Geometric\n* Central Vein: Geometric\n* Kupffer cells in the area surrounding portal vein, the area surrounding central vein and the lobular area : CD68+ segmented\n* Sinusoids and Steller cells in the area surrounding portal vein, the area surrounding central vein and the lobular area: alpha SMA+ Segmented",
+                    "Arrows": [],
+                    "Overlays": [],
+                    "Group": "All Markers",
+                    "Masks": [
+                        "Zone 1",
+                        "Zone 2",
+                        "Zone 3",
+                        "Central Vein",
+                        "Bile Duct",
+                        "Artery",
+                        "Portal Vein",
+                        "CV Macrophage",
+                        "CV Sinusoid",
+                        "Liver Macrophage",
+                        "Liver Sinusoid",
+                        "PV Macrophage",
+                        "PV Sinusoid",
+                        "All Cells"
+                    ],
+                    "ActiveMasks": [
+                        "Zone 1",
+                        "Zone 2",
+                        "Zone 3",
+                        "Central Vein",
+                        "Bile Duct",
+                        "Artery",
+                        "Portal Vein",
+                        "CV Macrophage",
+                        "CV Sinusoid",
+                        "Liver Macrophage",
+                        "Liver Sinusoid",
+                        "PV Macrophage",
+                        "PV Sinusoid",
+                        "All Cells"
+                    ],
+                    "Zoom": 0.8,
+                    "Pan": [
+                        0.5,
+                        0.5
+                    ]
+                },
+                {"Name": "Linking Molecular and Imaging Data", 
                     "Description": "One of the key aspects of spatial biology is the ability to link molecular data to spatial (image) information. In this plot, the number of genes detected per ROI by each brain structure is shown. Select a data point within the plot to see its corresponding ROI in the SOA image.\n\nMost regions in the brain show a high number of expressed genes. As expected, the segmented profiling revealed that considerably more genes were expressed in the cell body regions (NeuN+) than in the neuropil (NeuN-) regions. While the bulk of neuronal transcripts are captured in the NeuN+ somata, it is important to realize that neuropil data represents a combination of transcripts from enmeshed glia and the locally translated mRNAs of neuronal axons and dendrites.", 
                     "Footer": "Hints:\n* Select a single data point in the graph to spot the corresponding ROI in the SOA image.",
                     "Arrows": [], 
@@ -459,6 +500,104 @@
                         }
                     }
                 ]
+            }
+        },
+        {"Name": "Spatial Mapping of Genes", 
+            "Description": "Whole transcriptome profiling allows us to spatially map functional gene expression. This heatmap shows relative expression of various genes in different segmented ROIs.", 
+            "Footer": "Hints:\n* Hold mouse over the main body of heatmap to show the gene that a row corresponds to.\n* Hold mouse over the bottom key bar to identify a specific ROI.\n* Click on a column to zoom in on the corresponding ROI on the image.  Select the “All data layers” button to see how much segmentation is possible.",
+            "Arrows": [], 
+            "Overlays": [], 
+            "Group": "All Markers", 
+            "Masks": ["Zone 1", "Zone 2", "Zone 3"], 
+            "ActiveMasks": ["Zone 1", "Zone 2", "Zone 3"], 
+            "Zoom": 1, 
+            "Pan": [0.5, 0.5],
+            "MaskAndPan": {"config": {"axis": {"domain":false}, "view": {"continuousWidth": 400, "continuousHeight": 300}, "background": null}, "width": "container",
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "layer": [{
+                "data": {"url": "data/ZoneHeatmap.csv"},
+                "mark": "rect",
+                "encoding": {
+                    "x": {
+                        "field": "ROILabel",
+                        "type": "nominal",
+                        "title": null,
+                        "sort": null,
+                        "axis": {
+                            "labels": false,
+                            "ticks": false
+                        }
+                    },
+                    "y": {
+                        "field": "Gene",
+                        "type": "nominal",
+                        "sort": null,
+                        "title": null,
+                        "axis": {
+                            "labelColor": {
+                                "expr": "datum.value == 'CXCL14' ? '#009E73' : datum.value == 'THBS1' ? '#009E73' : datum.value == 'AKR1C1' ? '#009E73' : datum.value == 'SLCO1B3' ? '#009E73' : datum.value == 'CYP1A2' ? '#009E73' : datum.value == 'CYP3A4' ? '#009E73' : datum.value == 'AKR1C2' ? '#009E73' : datum.value == 'GLUL' ? '#009E73' : datum.value == 'GADD45G' ? '#009E73' : datum.value == 'CYP2E1' ? '#009E73' : datum.value == 'AOX1' ? '#009E73' : datum.value == 'ADH1B' ? '#009E73' : datum.value == 'ADH1A' ? '#009E73' : '#F0E442'"
+                                }
+                        }
+                    },
+                    "color": {
+                        "field": "Expression",
+                        "bin": {"binned": true},
+                        "scale": {"range": ["#7D26CD", "#6B20AF", "#591B92", "#471575", "#351057", "#230A3A", "#11051D", "#000000", "#212100", "#434300", "#656500", "#888800", "#AAAA00", "#CBCB00", "#EEEE00"]},
+                        "legend": {"orient": "top"}, 
+                        "title": null
+                    },
+                    "tooltip": {
+                        "field": "Gene",
+                        "type": "nominal"
+                    }
+                }
+            },
+            {
+            "data": {"url": "data/ZoneHeatmapAnnotation.csv"},
+            "mark": {
+                "type": "Bar",
+                "yOffset": 420
+            },
+            "height": 20,
+            "encoding": {
+                "x": {
+                    "field": "Percentage",
+                    "type": "quantitative",
+                    "axis": {
+                        "labels": false,
+                        "ticks": false
+                    },
+                    "title": null
+                },
+                "y": {
+                    "field": "bar",
+                    "type": "nominal",
+                    "title": null,
+                    "axis": {
+                        "labels": false,
+                        "ticks": false
+                    }
+                },
+                "tooltip": {"field": "Lobular", "type": "nominal", "title": "Lobular Region"},
+                "color": {
+                    "field": "Lobular",
+                    "type": "nominal",
+                    "sort":null,
+                    "legend": {
+                        "title": "Lobular",
+                        "offset": 440,
+                        "orient": "bottom",
+                        "direction": "vertical"
+                    },
+                    "scale": {
+                        "domain": ["Region 1", "Region 2", "Region 3", "Region 4", "Region 5", "Region 6"],
+                        "range": ["#F0E442", "#DECAC2", "#D55E00", "#CC79A7", "#7D26CD", "#6B20AF"]
+                    }
+                },
+                "order": {"field": "Order"}
+                }
+            }],
+            "resolve": {"scale": {"y": "independent"}}
             }
         }
             ]
