@@ -21,10 +21,10 @@
     "Stories": [
         {
             "Name": "A liver story created by Nanostring and Fynnbio",
-            "Description": "Welcome to the [**Spatial Organ Atlas (SOA)**](https://www.nanostring.com/spatial-organ-atlas) Human Liver Demonstration.\n\nThe SOA is a database for whole transcriptome spatial profiles of functional components of tissues from human and mouse generated with the GeoMx® Digital Spatial Profiler. All the data in the SOA is downloadable, including [**this human liver sample (#001)**](https://nanostring.com/products/geomx-digital-spatial-profiler/spatial-organ-atlas/human-brain/).\n\nUsing [**Minerva**](https://github.com/labsyspharm/minerva-story/wiki), we will show you how the imaging and molecular data combine to give you a comprehensive profile of the tissue architecture and biology.\n\nClick around to explore on your own. \n\nHints:\n* Zoom and pan the image via the mouse/trackpad. Dependent on browser and operating system, keyboard shortcuts are available: + zoom in, - zoom out, pan via arrow keys (tested on Chrome).\n* Open and close the left- and right-hand menus by clicking on < or >.\n* See results in the left-hand menu and click on the selectable regions to zoom to the featured area of the tissue.\n* Turn channels on and off with the right-hand menu.",
+            "Description": "Welcome to the [**Spatial Organ Atlas (SOA)**](https://www.nanostring.com/spatial-organ-atlas) Human Liver Demonstration.\n\nThe SOA is a database for whole transcriptome spatial profiles of functional components of tissues from human and mouse generated with the GeoMx® Digital Spatial Profiler. All the data in the SOA is downloadable, including [**this human liver sample (#001)[need to update link]**](https://nanostring.com/products/geomx-digital-spatial-profiler/spatial-organ-atlas/human-brain/).\n\nUsing [**Minerva**](https://github.com/labsyspharm/minerva-story/wiki), we will show you how the imaging and molecular data combine to give you a comprehensive profile of the tissue architecture and biology.\n\nClick around to explore on your own. \n\nHints:\n* Zoom and pan the image via the mouse/trackpad. Dependent on browser and operating system, keyboard shortcuts are available: + zoom in, - zoom out, pan via arrow keys (tested on Chrome).\n* Open and close the left- and right-hand menus by clicking on < or >.\n* See results in the left-hand menu and click on the selectable regions to zoom to the featured area of the tissue.\n* Turn channels on and off with the right-hand menu.",
             "Waypoints": [
                 {"Name": "Gross Liver Anatomy",
-                    "Description": "Liver is the largest internal organ in human body. It is involved in three major vital functions of the body including storage, cleansing and synthesis. A liver helps improve digestion, removes toxins and other impurities from the body, regulates blood clotting, removes bacteria from the blood and maintains the balance of hormones. The functional unit of the liver is the lobule. Each lobule is hexagonal and a portal triad (portal vein, hepatic artery, bile duct) sits at each corner of the hexagon. The foundation of the lobule is composed of hepatocytes, which have physiologically distinct apical and basolateral membranes. Based on function and perfusion, hepatocytes are divided into 3 zones. \n* Zone I is defined to be the periportal region of hepatocytes and are the best perfused and first to regenerate due to their proximity to oxygenated blood and nutrients. Due to its high perfusion, zone I plays a large role in oxidative metabolisms such as beta-oxidation, gluconeogenesis, bile formation, cholesterol formation, and amino acid catabolism. \n* Zone II is defined as the pericentral region of the hepatocytes and zone II sits between zones I and III. \n* Zone III has the lowest perfusion due to its distance from the portal triad. It plays the largest role in detoxification, biotransformation of drugs, ketogenesis, glycolysis, lipogenesis, glycogen synthesis, and glutamine formation.\n\nThis liver sample shown to the right represents a 5 µm FFPE tissue section from a 72-year-old man. The sample was visualized with CK8/18 (hepatocytes), CD 68 (Kupffer Cells/Macrophages), alpha-SMA (sinusoid and stellate cells and SYTO 83 (nuclei). In parallel, the sample was molecularly profiled with the GeoMx Human Whole Transcriptome Atlas (WTA) assay. You can click on the lobular zone 1, 2 And 3 in the cartoon to see them outlined on the tissue image, and you can toggle the Regions of Interest (ROIs) by selecting from the data layers below.",
+                    "Description": "Liver is the largest internal organ in human body. It is involved in three major vital functions of the body including storage, cleansing and synthesis. A liver helps improve digestion, removes toxins and other impurities from the body, regulates blood clotting, removes bacteria from the blood and maintains the balance of hormones. The functional unit of the liver is the lobule. Each lobule is hexagonal and a portal triad (portal vein, hepatic artery, bile duct) sits at each corner of the hexagon. The foundation of the lobule is composed of hepatocytes, which have physiologically distinct apical and basolateral membranes. Based on function and perfusion, hepatocytes are divided into 3 zones. \n* Zone I is defined to be the periportal region of hepatocytes and are the best perfused and first to regenerate due to their proximity to oxygenated blood and nutrients. Due to its high perfusion, zone I plays a large role in oxidative metabolisms such as beta-oxidation, gluconeogenesis, bile formation, cholesterol formation, and amino acid catabolism. \n* Zone II is defined as the pericentral region of the hepatocytes and zone II sits between zones I and III. \n* Zone III has the lowest perfusion due to its distance from the portal triad. It plays the largest role in detoxification, biotransformation of drugs, ketogenesis, glycolysis, lipogenesis, glycogen synthesis, and glutamine formation.\n\nThis liver sample shown to the right represents a 5 µm FFPE tissue section from a 72-year-old man. The sample was visualized with CK8/18 (hepatocytes), CD68 (Kupffer Cells/Macrophages), alpha-SMA (sinusoid and stellate cells) and SYTO 83 (nuclei). In parallel, the sample was molecularly profiled with the GeoMx Human Whole Transcriptome Atlas (WTA) assay. You can click on the lobular zone 1, 2 and 3 in the cartoon to see them outlined on the tissue image, and you can toggle the Regions of Interest (ROIs) by selecting from the data layers below.",
                     "Arrows": [],
                     "Overlays": [],
                     "Group": "All Markers",
@@ -41,8 +41,7 @@
                         "Liver Macrophage",
                         "Liver Sinusoid",
                         "PV Macrophage",
-                        "PV Sinusoid",
-                        "All Cells"
+                        "PV Sinusoid"
                     ],
                     "ActiveMasks": [
                         "Zone 1",
@@ -57,20 +56,19 @@
                         "Liver Macrophage",
                         "Liver Sinusoid",
                         "PV Macrophage",
-                        "PV Sinusoid",
-                        "All Cells"
+                        "PV Sinusoid"
                     ],
-                    "Zoom": 0.8,
+                    "Zoom": 1,
                     "Pan": [
                         0.5,
                         0.5
                     ]
                 },
                 {"Name": "Detailed Liver Anatomy",
-                    "Description": "With GeoMx DSP, Regions of Interest (ROIs) are selected by the user and then molecularly profiled. These ROIs can be either profiled whole (i.e. geometric profiling) or subdivided based on the visible morphology markers into compartments and profiled separately (i.e. segmented and rare cell profiling). In the cartoon below, the key features of the liver lobular are highlighted and corresponding ROIs are mapped on the tissue image to the right.\n* Liver lobular Zone 1, 2 and 3: Geometric\n* Bile duct, hepatic artery and portal vein in Portal triad: Geometric\n* Central Vein: Geometric\n* Kupffer cells in the area surrounding portal vein, the area surrounding central vein and the lobular area : CD68+ segmented\n* Sinusoids and Steller cells in the area surrounding portal vein, the area surrounding central vein and the lobular area: alpha SMA+ Segmented",
+                    "Description": "With GeoMx DSP, Regions of Interest (ROIs) are selected by the user and then molecularly profiled. These ROIs can be either profiled whole (i.e. geometric profiling) or subdivided based on the visible morphology markers into compartments and profiled separately (i.e. segmented and rare cell profiling). In the cartoon below, the key features of the liver lobular are highlighted and corresponding ROIs are mapped on the tissue image to the right.\n* Liver lobular zones (Zone 1, Zone 2 and Zone 3): Geometric\n* Portal triad (Bile Duct, Artery and Portal Vein) : Geometric\n* Central Vein: Geometric\n* Kupffer cells (surrounding Portal Vein, surrounding Central Vein and the lobular area) : CD68+ segmented\n* Sinusoids and Steller cells (surrounding Portal Vein, surrounding Central Vein and the lobular area): alpha SMA+ segmented",
                     "Arrows": [],
                     "Overlays": [],
-                    "Group": "All Markers",
+                    "Group": "CD68",
                     "Masks": [
                         "Zone 1",
                         "Zone 2",
@@ -84,8 +82,7 @@
                         "Liver Macrophage",
                         "Liver Sinusoid",
                         "PV Macrophage",
-                        "PV Sinusoid",
-                        "All Cells"
+                        "PV Sinusoid"
                     ],
                     "ActiveMasks": [
                         "Zone 1",
@@ -100,8 +97,7 @@
                         "Liver Macrophage",
                         "Liver Sinusoid",
                         "PV Macrophage",
-                        "PV Sinusoid",
-                        "All Cells"
+                        "PV Sinusoid"
                     ],
                     "Zoom": 0.8,
                     "Pan": [
@@ -110,11 +106,11 @@
                     ]
                 },
                 {"Name": "Linking Molecular and Imaging Data", 
-                    "Description": "One of the key aspects of spatial biology is the ability to link molecular data to spatial (image) information. In this plot, the number of genes detected per ROI by each brain structure is shown. Select a data point within the plot to see its corresponding ROI in the SOA image.\n\nMost regions in the brain show a high number of expressed genes. As expected, the segmented profiling revealed that considerably more genes were expressed in the cell body regions (NeuN+) than in the neuropil (NeuN-) regions. While the bulk of neuronal transcripts are captured in the NeuN+ somata, it is important to realize that neuropil data represents a combination of transcripts from enmeshed glia and the locally translated mRNAs of neuronal axons and dendrites.", 
+                    "Description": "One of the key aspects of spatial biology is the ability to link molecular data to spatial (image) information. In this plot, the number of genes detected per ROI by each brain structure is shown. Select a data point within the plot to see its corresponding ROI in the SOA image.\n\nAs expected, the geometric ROIs in lobular zones, central veins, portal veins and bile ducts showed considerably more detected genes than segmented ROIs of Kuffer cells and sinusoid which are single cell types.", 
                     "Footer": "Hints:\n* Select a single data point in the graph to spot the corresponding ROI in the SOA image.",
                     "Arrows": [], 
                     "Overlays": [], 
-                    "Group": "All Markers", 
+                    "Group": "CD68", 
                     "Masks": [
                         "Zone 1",
                         "Zone 2",
@@ -128,8 +124,7 @@
                         "Liver Macrophage",
                         "Liver Sinusoid",
                         "PV Macrophage",
-                        "PV Sinusoid",
-                        "All Cells"
+                        "PV Sinusoid"
                     ],
                     "ActiveMasks": [
                         "Zone 1",
@@ -144,15 +139,14 @@
                         "Liver Macrophage",
                         "Liver Sinusoid",
                         "PV Macrophage",
-                        "PV Sinusoid",
-                        "All Cells"
+                        "PV Sinusoid"
                     ],
-                    "Zoom": 0.415575667912783, 
+                    "Zoom": 1, 
                     "Pan": [0.5, 0.5],
                     "MaskAndPan": {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "background": null}, "width": "container",
                     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
                     "data": {
-                        "url": "data/waypoints.csv"
+                        "url": "data/GenesDetected.csv"
                     },
                     "mark": {
                         "type": "point",
@@ -166,7 +160,7 @@
                             "field": "x_axis",
                             "type": "quantitative",
                             "axis": {
-                                "labelExpr": "datum.label == 1 ? 'Artery' : datum.label == 2 ? 'Bile Duct' : datum.label == 3 ? 'Central Vein' : datum.label == 4 ? 'CV Macrophage' : datum.label == 5 ? 'CV Sinusoid' : datum.label == 6 ? 'Liver Macrophage' : datum.label == 7 ? 'Liver Sinusoid' : datum.label == 8 ? 'Portal Vein' : datum.label == 9 ? 'PV Macrophage' : datum.label == 10 ? 'PV Sinusoid' : datum.label == 11 ? 'Zone 1' : datum.label == 12 ? 'Zone 2' : datum.label == 13 ? 'Zone 3' : null",
+                                "labelExpr": "datum.label == 1 ? 'Zone 1' : datum.label == 2 ? 'Zone 2' : datum.label == 3 ? 'Zone 3' : datum.label == 4 ? 'Central Vein' : datum.label == 5 ? 'Bile Duct' : datum.label == 6 ? 'Artery' : datum.label == 7 ? 'Portal Vein' : datum.label == 8 ? 'CV Macrophage' : datum.label == 9 ? 'CV Sinusoid' : datum.label == 10 ? 'Liver Macrophage' : datum.label == 11 ? 'Liver Sinusoid' : datum.label == 12 ? 'PV Macrophage' : datum.label == 13 ? 'PV Sinusoid' : null",
                                 "labelAngle": -90,
                                 "tickCount": 13,
                                 "grid": false
@@ -180,7 +174,7 @@
                             "title": "Genes Detected, # > LOQ"
                         },
                         "color": {
-                            "field": "PrimaryLocation",
+                            "field": "type",
                             "type": "nominal",
                             "legend": {
                                 "orient": "bottom",
@@ -210,7 +204,7 @@
                         },
                     "tooltip": [
                         {"field": "GenesDetected", "type": "quantitative"},
-                        {"field": "PrimaryLocation", "type": "nominal", "title": "ROI category"}
+                        {"field": "type", "type": "nominal", "title": "ROI category"}
                     ]
                     }
                 }
@@ -220,7 +214,7 @@
                     "Footer": "Hints:\n* Select the regions on the graph with the genes that are differentially expressed to see all the ROIs where those genes are more highly expressed.\n* Turning on only a single channel may help you see smaller ROIs.",
                     "Arrows": [], 
                     "Overlays": [], 
-                    "Group": "All Markers", 
+                    "Group": "SMA", 
                     "Masks": ["Zone 1", "Zone 2", "Zone 3"], 
                     "ActiveMasks": ["Zone 1", "Zone 2", "Zone 3"], 
                     "Zoom": 1, 
@@ -328,7 +322,7 @@
         },
         {"Name": "Validating Gene Expression with Protein Expression 1", 
             "Description": "We explored the relationship between our data and the [**Human Protein Atlas**](https://www.proteinatlas.org/) to investigate whether the gene expression patterns we observed would correspond to existing protein data. Here we see expression of the *CYP1A2* gene alongside the IHC for the corresponding protein. The protein is expressed in Zone 3, which correlates well to the observed gene expression in Zone 3 ROIs. The other two examples are *CYP2E1* and *CYP3A4*.\n\nCytochrome P450 (CYPs) are a family of monooxygenases involved in the metabolism of various endogenous substrates, including fatty acids, steroid hormones and vitamins.\n\n![image](img/CYP1A2.png)\n\n[*Image credit: Human Protein Atlas.*](https://www.proteinatlas.org/ENSG00000140505-CYP1A2/tissue/liver#img)", 
-            "Footer": "Hints:\n* Select a single data point to be taken to that ROI.\n* If you hover your mouse over the boxplot, a summary of the distribution metrics for that ROI type will be displayed.",
+            "Footer": "Hints:\n* Select a single data point to be taken to the corresponding ROI.\n* If you hover your mouse over the boxplot, a summary of the distribution metrics for that ROI type will be displayed.",
             "Arrows": [], 
             "Overlays": [], 
             "Group": "All Markers", 
@@ -343,10 +337,8 @@
                             "X_position": "number",
                             "Y_position": "number",
                             "type":"string",
-                            "SegmentType": "string",
                             "CYP1A2":"number",
-                            "x_axis":"number",
-                            "LongName": "string"
+                            "x_axis":"number"
                         }
                     }
                 }, 
@@ -361,11 +353,8 @@
                         }, 
                     "encoding": {
                         "color": {
-                            "field": "Sub_location",
-                            "legend": {
-                                "orient": "bottom",
-                                "direction":"vertical"
-                            },
+                            "field": "type",
+                            "legend": null,
                             "scale": {
                                 "domain": ["Zone 1", "Zone 2", "Zone 3"],
                                 "range": ["#F0E442", "#CC79A7", "#DECAC2"]
@@ -373,7 +362,7 @@
                             }, 
                         "x": {
                             "type": "nominal", 
-                            "field": "Sub_location", 
+                            "field": "type", 
                             "title": null,
                             "sort": ["Zone 1", "Zone 2", "Zone 3"]
                             },
@@ -397,7 +386,8 @@
                         "x": {
                             "field": "x_axis", 
                             "title" :null, 
-                            "type": "quantitative", 
+                            "type": "quantitative",
+                            "scale": {"domain": [0, 3]},
                             "axis": {
                                 "labels":false, 
                                 "ticks":false
@@ -408,7 +398,7 @@
                             "type": "quantitative"
                             },
                         "tooltip": [{"field": "CYP1A2", "type": "quantitative", "title": "CYP1A2 Normalized Expression","format": ".0f" },
-                        {"field": "Sub_location", "type": "nominal", "title": "ROI Category"}]
+                        {"field": "type", "type": "nominal", "title": "ROI Category"}]
                         }
                     }
                 ]
@@ -416,7 +406,7 @@
         },
         {"Name": "Validating Gene Expression with Protein Expression 2", 
             "Description": "We explored the relationship between our data and the [**Human Protein Atlas**](https://www.proteinatlas.org/) to investigate whether the gene expression patterns we observed would correspond to existing protein data. Here we see expression of the *ALDOB* gene alongside the IHC for the corresponding protein. The protein is expressed at a high level in Zone 1 compared to Zone 3.\n\n*ALDOB* is an enzyme involved in step 4 of the subpathway that synthesizes D-glyceraldehyde 3-phosphate and glycerone phosphate from D-glucose. This subpathway is part of the pathway glycolysis, which is itself part of Carbohydrate degradation.\n\n![image](img/ALDOB.png)\n\n[*Image credit: Human Protein Atlas.*](https://www.proteinatlas.org/ENSG00000136872-ALDOB/tissue/liver#img)", 
-            "Footer": "Hints:\n* Select a single data point to be taken to that ROI.\n* If you hover your mouse over the boxplot, a summary of the distribution metrics for that ROI type will be displayed.",
+            "Footer": "Hints:\n* Select a single data point to be taken to the corresponding ROI.\n* If you hover your mouse over the boxplot, a summary of the distribution metrics for that ROI type will be displayed.",
             "Arrows": [], 
             "Overlays": [], 
             "Group": "All Markers", 
@@ -431,10 +421,8 @@
                             "X_position": "number",
                             "Y_position": "number",
                             "type":"string",
-                            "SegmentType": "string",
                             "ALDOB":"number",
-                            "x_axis":"number",
-                            "LongName": "string"
+                            "x_axis":"number"
                         }
                     }
                 }, 
@@ -449,11 +437,8 @@
                         }, 
                     "encoding": {
                         "color": {
-                            "field": "Sub_location",
-                            "legend": {
-                                "orient": "bottom",
-                                "direction":"vertical"
-                            },
+                            "field": "type",
+                            "legend": null,
                             "scale": {
                                 "domain": ["Zone 1", "Zone 2", "Zone 3"],
                                 "range": ["#F0E442", "#CC79A7", "#DECAC2"]
@@ -461,7 +446,7 @@
                             }, 
                         "x": {
                             "type": "nominal", 
-                            "field": "Sub_location", 
+                            "field": "type", 
                             "title": null,
                             "sort": ["Zone 1", "Zone 2", "Zone 3"]
                             },
@@ -485,7 +470,8 @@
                         "x": {
                             "field": "x_axis", 
                             "title" :null, 
-                            "type": "quantitative", 
+                            "type": "quantitative",
+                            "scale": {"domain": [0, 3]},
                             "axis": {
                                 "labels":false, 
                                 "ticks":false
@@ -496,15 +482,15 @@
                             "type": "quantitative"
                             },
                         "tooltip": [{"field": "ALDOB", "type": "quantitative", "title": "ALDOB Normalized Expression","format": ".0f" },
-                        {"field": "Sub_location", "type": "nominal", "title": "ROI Category"}]
+                        {"field": "type", "type": "nominal", "title": "ROI Category"}]
                         }
                     }
                 ]
             }
         },
         {"Name": "Spatial Mapping of Genes", 
-            "Description": "Whole transcriptome profiling allows us to spatially map functional gene expression. This heatmap shows relative expression of various genes in different segmented ROIs.", 
-            "Footer": "Hints:\n* Hold mouse over the main body of heatmap to show the gene that a row corresponds to.\n* Hold mouse over the bottom key bar to identify a specific ROI.\n* Click on a column to zoom in on the corresponding ROI on the image.  Select the “All data layers” button to see how much segmentation is possible.",
+            "Description": "Whole transcriptome profiling allows us to spatially map functional gene expression. This heatmap shows relative expression of various genes in different ROIs in the lobular zones between central veins and portal triads. These genes exhibited a gradient of expression levels.", 
+            "Footer": "Hints:\n* Hold mouse over the main body of heatmap to show the gene that a row corresponds to.\n* Hold mouse over the bottom key bar to identify a specific lobular region.\n* Click on a column to zoom in on the corresponding ROI on the image.",
             "Arrows": [], 
             "Overlays": [], 
             "Group": "All Markers", 
@@ -531,7 +517,7 @@
                     "y": {
                         "field": "Gene",
                         "type": "nominal",
-                        "sort": null,
+                        "sort": {"field": "Group"},
                         "title": null,
                         "axis": {
                             "labelColor": {
@@ -541,22 +527,27 @@
                     },
                     "color": {
                         "field": "Expression",
-                        "bin": {"binned": true},
-                        "scale": {"range": ["#7D26CD", "#6B20AF", "#591B92", "#471575", "#351057", "#230A3A", "#11051D", "#000000", "#212100", "#434300", "#656500", "#888800", "#AAAA00", "#CBCB00", "#EEEE00"]},
+                        "type": "quantitative",
+                        "scale": {"domain": [-1.5, 1.5], "scheme": "viridis"},
                         "legend": {"orient": "top"}, 
                         "title": null
                     },
-                    "tooltip": {
-                        "field": "Gene",
-                        "type": "nominal"
-                    }
+                    "facet": {
+                        "field": "Lobular",
+                        "type": "ordinal",
+                        "column": 6
+                    },
+                    "tooltip": [
+                        {"field": "Gene", "type": "nominal"},
+                        {"field": "type", "type": "nominal", "title": "Lobular Zone"}
+                    ]
                 }
             },
             {
             "data": {"url": "data/ZoneHeatmapAnnotation.csv"},
             "mark": {
-                "type": "Bar",
-                "yOffset": 420
+                "type": "bar",
+                "yOffset": 550
             },
             "height": 20,
             "encoding": {
@@ -584,17 +575,16 @@
                     "type": "nominal",
                     "sort":null,
                     "legend": {
-                        "title": "Lobular",
-                        "offset": 440,
+                        "title": "Lobular Region",
+                        "offset": 570,
                         "orient": "bottom",
                         "direction": "vertical"
                     },
                     "scale": {
-                        "domain": ["Region 1", "Region 2", "Region 3", "Region 4", "Region 5", "Region 6"],
-                        "range": ["#F0E442", "#DECAC2", "#D55E00", "#CC79A7", "#7D26CD", "#6B20AF"]
+                        "domain": ["Region 1", "Region 2", "Region 3", "Region 4", "Region 5", "Region 6"]
                     }
                 },
-                "order": {"field": "Order"}
+                "order": {"field": "Lobular"}
                 }
             }],
             "resolve": {"scale": {"y": "independent"}}
