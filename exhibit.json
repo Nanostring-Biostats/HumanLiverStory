@@ -3,7 +3,7 @@
         {
             "Name": "i0",
             "Description": "",
-            "Path": "images/hu-normal-liver-001",
+            "Path": "images/hu-normal-liver-001a",
             "Width": 49152,
             "Height": 81920,
             "MaxLevel": 7
@@ -23,8 +23,9 @@
             "Name": "A liver story created by Nanostring and Fynnbio",
             "Description": "Welcome to the [**Spatial Organ Atlas (SOA)**](https://www.nanostring.com/spatial-organ-atlas) Human Liver Demonstration.\n\nThe SOA is a database for whole transcriptome spatial profiles of functional components of tissues from human and mouse generated with the GeoMx® Digital Spatial Profiler. All the data in the SOA is downloadable, including [**this human liver sample (#001)[need to update link]**](https://nanostring.com/products/geomx-digital-spatial-profiler/spatial-organ-atlas/human-brain/).\n\nUsing [**Minerva**](https://github.com/labsyspharm/minerva-story/wiki), we will show you how the imaging and molecular data combine to give you a comprehensive profile of the tissue architecture and biology.\n\nClick around to explore on your own. \n\nHints:\n* Zoom and pan the image via the mouse/trackpad. Dependent on browser and operating system, keyboard shortcuts are available: + zoom in, - zoom out, pan via arrow keys (tested on Chrome).\n* Open and close the left- and right-hand menus by clicking on < or >.\n* See results in the left-hand menu and click on the selectable regions to zoom to the featured area of the tissue.\n* Turn channels on and off with the right-hand menu.",
             "Waypoints": [
-                {"Name": "Gross Liver Anatomy",
-                    "Description": "Liver is the largest internal organ in human body. It is involved in three major vital functions of the body including storage, cleansing and synthesis. A liver helps improve digestion, removes toxins and other impurities from the body, regulates blood clotting, removes bacteria from the blood and maintains the balance of hormones. The functional unit of the liver is the lobule. Each lobule is hexagonal and a portal triad (portal vein, hepatic artery, bile duct) sits at each corner of the hexagon. The foundation of the lobule is composed of hepatocytes, which have physiologically distinct apical and basolateral membranes. Based on function and perfusion, hepatocytes are divided into 3 zones. \n* Zone I is defined to be the periportal region of hepatocytes and are the best perfused and first to regenerate due to their proximity to oxygenated blood and nutrients. Due to its high perfusion, zone I plays a large role in oxidative metabolisms such as beta-oxidation, gluconeogenesis, bile formation, cholesterol formation, and amino acid catabolism. \n* Zone II is defined as the pericentral region of the hepatocytes and zone II sits between zones I and III. \n* Zone III has the lowest perfusion due to its distance from the portal triad. It plays the largest role in detoxification, biotransformation of drugs, ketogenesis, glycolysis, lipogenesis, glycogen synthesis, and glutamine formation.\n\nThis liver sample shown to the right represents a 5 µm FFPE tissue section from a 72-year-old man. The sample was visualized with CK8/18 (hepatocytes), CD68 (Kupffer Cells/Macrophages), alpha-SMA (sinusoid and stellate cells) and SYTO 83 (nuclei). In parallel, the sample was molecularly profiled with the GeoMx Human Whole Transcriptome Atlas (WTA) assay. You can click on the lobular zone 1, 2 and 3 in the cartoon to see them outlined on the tissue image, and you can toggle the Regions of Interest (ROIs) by selecting from the data layers below.",
+                {
+                    "Name": "Gross Liver Anatomy",
+                    "Description": "The liver is the largest internal organ in human body. It is involved in three major vital functions of the body including storage, cleansing and synthesis. A liver helps improve digestion, removes toxins and other impurities from the body, regulates blood clotting, removes bacteria from the blood and maintains the balance of hormones. The functional unit of the liver is the lobule. Each lobule is hexagonal and a portal triad (portal vein, hepatic artery, bile duct) sits at each corner of the hexagon. The foundation of the lobule is composed of hepatocytes, which have physiologically distinct apical and basolateral membranes. Based on function and perfusion, hepatocytes are divided into 3 zones. \n* Zone I is defined to be the periportal region of hepatocytes and are the best perfused and first to regenerate due to their proximity to oxygenated blood and nutrients. Due to its high perfusion, zone I plays a large role in oxidative metabolisms such as beta-oxidation, gluconeogenesis, bile formation, cholesterol formation, and amino acid catabolism. \n* Zone II is defined as the pericentral region of the hepatocytes and zone II sits between zones I and III. \n* Zone III has the lowest perfusion due to its distance from the portal triad. It plays the largest role in detoxification, biotransformation of drugs, ketogenesis, glycolysis, lipogenesis, glycogen synthesis, and glutamine formation.\n\nThis liver sample shown to the right represents a 5 µm FFPE tissue section from a 72-year-old man. The sample was visualized with CK8/18 (hepatocytes), CD68 (Kupffer Cells/Macrophages), alpha-SMA (sinusoid and stellate cells) and SYTO 83 (nuclei). In parallel, the sample was molecularly profiled with the GeoMx Human Whole Transcriptome Atlas (WTA) assay. You can click on the lobular zone 1, 2 and 3 in the cartoon to see them outlined on the tissue image, and you can toggle the Regions of Interest (ROIs) by selecting from the data layers below.",
                     "Arrows": [],
                     "Overlays": [],
                     "Group": "All Markers",
@@ -68,7 +69,7 @@
                     "Description": "With GeoMx DSP, Regions of Interest (ROIs) are selected by the user and then molecularly profiled. These ROIs can be either profiled whole (i.e. geometric profiling) or subdivided based on the visible morphology markers into compartments and profiled separately (i.e. segmented and rare cell profiling). In the cartoon below, the key features of the liver lobular are highlighted and corresponding ROIs are mapped on the tissue image to the right.\n* Liver lobular zones (Zone 1, Zone 2 and Zone 3): Geometric\n* Portal triad (Bile Duct, Artery and Portal Vein) : Geometric\n* Central Vein: Geometric\n* Kupffer cells (surrounding Portal Vein, surrounding Central Vein and the lobular area) : CD68+ segmented\n* Sinusoids and Steller cells (surrounding Portal Vein, surrounding Central Vein and the lobular area): alpha SMA+ segmented",
                     "Arrows": [],
                     "Overlays": [],
-                    "Group": "CD68",
+                    "Group": "CD68 SMA",
                     "Masks": [
                         "Zone 1",
                         "Zone 2",
@@ -99,7 +100,7 @@
                         "PV Macrophage",
                         "PV Sinusoid"
                     ],
-                    "Zoom": 0.8,
+                    "Zoom": 1,
                     "Pan": [
                         0.5,
                         0.5
@@ -110,7 +111,7 @@
                     "Footer": "Hints:\n* Select a single data point in the graph to spot the corresponding ROI in the SOA image.",
                     "Arrows": [], 
                     "Overlays": [], 
-                    "Group": "CD68", 
+                    "Group": "CD68 SMA", 
                     "Masks": [
                         "Zone 1",
                         "Zone 2",
@@ -214,7 +215,7 @@
                     "Footer": "Hints:\n* Select the regions on the graph with the genes that are differentially expressed to see all the ROIs where those genes are more highly expressed.\n* Turning on only a single channel may help you see smaller ROIs.",
                     "Arrows": [], 
                     "Overlays": [], 
-                    "Group": "SMA", 
+                    "Group": "All Markers", 
                     "Masks": ["Zone 1", "Zone 2", "Zone 3"], 
                     "ActiveMasks": ["Zone 1", "Zone 2", "Zone 3"], 
                     "Zoom": 1, 
@@ -608,7 +609,7 @@
             "Path": "Zone-1",
             "Name": "Zone 1",
             "Colors": [
-                "308e36"
+                "fec4e4"
             ],
             "Channels": [
                 "Zone 1"
@@ -618,7 +619,7 @@
             "Path": "Zone-2",
             "Name": "Zone 2",
             "Colors": [
-                "140f36"
+                "f093c7"
             ],
             "Channels": [
                 "Zone 2"
@@ -628,7 +629,7 @@
             "Path": "Zone-3",
             "Name": "Zone 3",
             "Colors": [
-                "913521"
+                "be719c"
             ],
             "Channels": [
                 "Zone 3"
@@ -638,7 +639,7 @@
             "Path": "Central-Vein",
             "Name": "Central Vein",
             "Colors": [
-                "093a15"
+                "37a7e5"
             ],
             "Channels": [
                 "Central Vein"
@@ -648,7 +649,7 @@
             "Path": "Bile-Duct",
             "Name": "Bile Duct",
             "Colors": [
-                "381095"
+                "d55e00"
             ],
             "Channels": [
                 "Bile Duct"
@@ -658,7 +659,7 @@
             "Path": "Artery",
             "Name": "Artery",
             "Colors": [
-                "3d1803"
+                "f0e442"
             ],
             "Channels": [
                 "Artery"
@@ -668,7 +669,7 @@
             "Path": "Portal-Vein",
             "Name": "Portal Vein",
             "Colors": [
-                "3c9863"
+                "009e73"
             ],
             "Channels": [
                 "Portal Vein"
@@ -678,7 +679,7 @@
             "Path": "CV-Macrophage",
             "Name": "CV Macrophage",
             "Colors": [
-                "2a1641"
+                "ccf2f7"
             ],
             "Channels": [
                 "CV Macrophage"
@@ -688,7 +689,7 @@
             "Path": "CV-Sinusoid",
             "Name": "CV Sinusoid",
             "Colors": [
-                "9c682c"
+                "fdae70"
             ],
             "Channels": [
                 "CV Sinusoid"
@@ -698,7 +699,7 @@
             "Path": "Liver-Macrophage",
             "Name": "Liver Macrophage",
             "Colors": [
-                "0f442f"
+                "b9f9e8"
             ],
             "Channels": [
                 "Liver Macrophage"
@@ -708,7 +709,7 @@
             "Path": "Liver-Sinusoid",
             "Name": "Liver Sinusoid",
             "Colors": [
-                "721a9f"
+                "beb532"
             ],
             "Channels": [
                 "Liver Sinusoid"
@@ -718,7 +719,7 @@
             "Path": "PV-Macrophage",
             "Name": "PV Macrophage",
             "Colors": [
-                "483607"
+                "fff9ad"
             ],
             "Channels": [
                 "PV Macrophage"
@@ -728,7 +729,7 @@
             "Path": "PV-Sinusoid",
             "Name": "PV Sinusoid",
             "Colors": [
-                "08a381"
+                "cbcbcb"
             ],
             "Channels": [
                 "PV Sinusoid"
@@ -748,6 +749,20 @@
             "Channels": [
                 "DNA",
                 "CK8/18",
+                "CD68",
+                "SMA"
+            ]
+        },
+        {
+            "Name": "CD68 SMA",
+            "Path": "CD68-SMA_0__DNA--2__CD68--3__SMA",
+            "Colors": [
+                "0000ff",
+                "ffff00",
+                "ff00ff"
+            ],
+            "Channels": [
+                "DNA",
                 "CD68",
                 "SMA"
             ]
