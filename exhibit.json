@@ -71,7 +71,7 @@
                     "Description": "With GeoMx DSP, Regions of Interest (ROIs) are selected by the user and then molecularly profiled. These ROIs can be either profiled whole (i.e., geometric profiling) or subdivided based on the visible morphology markers into compartments and profiled separately (i.e., segmented and rare cell profiling). In the cartoon below, the key features of the liver lobule are highlighted and corresponding ROIs are mapped on the tissue image to the right. You can click on the outlined names of the liver structure in the cartoon to see example ROIs on the tissue image, and you can toggle the ROIs by selecting from the data layers below.\n* Liver lobular zones (Zone 1, Zone 2, and Zone 3): Geometric\n* Portal triad (Bile Duct, Artery and Portal Vein): Geometric\n* Central Vein: Geometric\n* Kupffer cells (surrounding Portal Vein, surrounding Central Vein and the lobular area): CD68+ segmented\n* Sinusoids and Stellate cells (surrounding Portal Vein, surrounding Central Vein and the lobular area): α-SMA+ segmented\n\nModified from MacParland et al., 2018",
                     "Arrows": [],
                     "Overlays": [],
-                    "Group": "CD68 SMA",
+                    "Group": "CD68 SMA DNA",
                     "Masks": [
                         "Zone 1",
                         "Zone 2",
@@ -114,7 +114,7 @@
                     "Footer": "Hints:\n* Select a single data point in the graph to spot the corresponding ROI in the SOA image.",
                     "Arrows": [],
                     "Overlays": [],
-                    "Group": "CD68 SMA",
+                    "Group": "CD68 SMA DNA",
                     "Masks": [
                         "Zone 1",
                         "Zone 2",
