@@ -693,7 +693,7 @@
                 },
                 {
                     "Name": "Spatial Mapping of Genes",
-                    "Description": "Whole transcriptome profiling allows us to spatially map functional gene expression. This heatmap shows relative expression of various genes in different ROIs in the lobular zones between central veins and portal triads. These genes exhibited a gradient of expression levels.",
+                    "Description": "Whole transcriptome profiling allows us to spatially map functional gene expression. This heatmap shows relative expression of various genes in different ROIs in the lobular zones between central veins and portal triads. These genes exhibited a gradient of expression levels. Each lobular region below is composed of its respective Zones I, II, and III AOIs.",
                     "Footer": "Hints:\n* Hold mouse over the main body of heatmap to show the gene that a row corresponds to.\n* Hold mouse over the bottom key bar to identify a specific lobular region.\n* Click on a column to zoom in on the corresponding ROI on the image.",
                     "Arrows": [],
                     "Overlays": [],
@@ -795,7 +795,7 @@
                                 },
                                 "mark": {
                                     "type": "bar",
-                                    "yOffset": 550
+                                    "yOffset": 540
                                 },
                                 "height": 20,
                                 "encoding": {
@@ -828,7 +828,7 @@
                                         "sort": null,
                                         "legend": {
                                             "title": "Lobular Region",
-                                            "offset": 570,
+                                            "offset": 580,
                                             "orient": "bottom",
                                             "direction": "vertical"
                                         },
@@ -840,6 +840,75 @@
                                                 "Region 4",
                                                 "Region 5",
                                                 "Region 6"
+                                            ],
+                                            "range": [
+                                                "#FFFF00",
+                                                "#FF00FF",
+                                                "#00FFFF",
+                                                "#0000FF",
+                                                "#00FF00",
+                                                "#FF0000"
+                                            ]
+                                        }
+                                    },
+                                    "order": {
+                                        "field": "Lobular"
+                                    }
+                                }
+                            },
+                            {
+                                "data": {
+                                    "url": "data/ZoneHeatmapAnnotation.csv"
+                                },
+                                "mark": {
+                                    "type": "bar",
+                                    "yOffset": 560
+                                },
+                                "height": 20,
+                                "encoding": {
+                                    "x": {
+                                        "field": "Percentage",
+                                        "type": "quantitative",
+                                        "axis": {
+                                            "labels": false,
+                                            "ticks": false
+                                        },
+                                        "title": null
+                                    },
+                                    "y": {
+                                        "field": "bar",
+                                        "type": "nominal",
+                                        "title": null,
+                                        "axis": {
+                                            "labels": false,
+                                            "ticks": false
+                                        }
+                                    },
+                                    "tooltip": {
+                                        "field": "Lobular",
+                                        "type": "nominal",
+                                        "title": "Lobular Region"
+                                    },
+                                    "color": {
+                                        "field": "type",
+                                        "type": "nominal",
+                                        "sort": null,
+                                        "legend": {
+                                            "title": "ROI Type",
+                                            "offset": 580,
+                                            "orient": "bottom",
+                                            "direction": "vertical"
+                                        },
+                                        "scale": {
+                                            "domain": [
+                                                "Zone 1",
+                                                "Zone 2",
+                                                "Zone 3"
+                                            ],
+                                            "range": [
+                                                "#fec4e4",
+                                                "#f093c7",
+                                                "#be719c"
                                             ]
                                         }
                                     },

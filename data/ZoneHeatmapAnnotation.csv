@@ -1,4 +1,4 @@
-Order,ROILabel,Sub_location,Lobular,Slice,bar,Percentage,X_position,Y_postion
+Order,ROILabel,type,Lobular,Slice,bar,Percentage,X_position,Y_position
 1,2,Zone 3,Region 1,Slice 1,two,0.0303,26912,24305
 2,3,Zone 3,Region 1,Slice 2,two,0.0303,26867,24276
 3,4,Zone 2,Region 1,Slice 3,two,0.0303,26572,23905
